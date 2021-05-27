@@ -63,11 +63,13 @@ namespace Tic_Tac_Toe
             {
                 btnOne.Text = "X";
                 screenDisplay.Text = "O turn";
+                gettingTheWinner();
             }
             else
             {
                 btnOne.Text = "O";
                 screenDisplay.Text = "X turn";
+                gettingTheWinner();
             }
 
             btnOne.Enabled = false;
@@ -80,11 +82,13 @@ namespace Tic_Tac_Toe
             {
                 btnTwo.Text = "X";
                 screenDisplay.Text = "O turn";
+                gettingTheWinner();
             }
             else
             {
                 btnTwo.Text = "O";
                 screenDisplay.Text = "X turn";
+                gettingTheWinner();
             }
 
             btnTwo.Enabled = false;
@@ -97,11 +101,13 @@ namespace Tic_Tac_Toe
             {
                 btnThree.Text = "X";
                 screenDisplay.Text = "O turn";
+                gettingTheWinner();
             }
             else
             {
                 btnThree.Text = "O";
                 screenDisplay.Text = "X turn";
+                gettingTheWinner();
             }
 
             btnThree.Enabled = false;
@@ -114,11 +120,13 @@ namespace Tic_Tac_Toe
             {
                 btnFour.Text = "X";
                 screenDisplay.Text = "O turn";
+                gettingTheWinner();
             }
             else
             {
                 btnFour.Text = "O";
                 screenDisplay.Text = "X turn";
+                gettingTheWinner();
             }
 
             btnFour.Enabled = false;
@@ -131,11 +139,13 @@ namespace Tic_Tac_Toe
             {
                 btnFive.Text = "X";
                 screenDisplay.Text = "O turn";
+                gettingTheWinner();
             }
             else
             {
                 btnFive.Text = "O";
                 screenDisplay.Text = "X turn";
+                gettingTheWinner();
             }
 
             btnFive.Enabled = false;
@@ -148,11 +158,13 @@ namespace Tic_Tac_Toe
             {
                 btnSix.Text = "X";
                 screenDisplay.Text = "O turn";
+                gettingTheWinner();
             }
             else
             {
                 btnSix.Text = "O";
                 screenDisplay.Text = "X turn";
+                gettingTheWinner();
             }
 
             btnSix.Enabled = false;
@@ -165,11 +177,13 @@ namespace Tic_Tac_Toe
             {
                 btnSeven.Text = "X";
                 screenDisplay.Text = "O turn";
+                gettingTheWinner();
             }
             else
             {
                 btnSeven.Text = "O";
                 screenDisplay.Text = "X turn";
+                gettingTheWinner();
             }
 
             btnSeven.Enabled = false;
@@ -182,11 +196,13 @@ namespace Tic_Tac_Toe
             {
                 btnEight.Text = "X";
                 screenDisplay.Text = "O turn";
+                gettingTheWinner();
             }
             else
             {
                 btnEight.Text = "O";
                 screenDisplay.Text = "X turn";
+                gettingTheWinner();
             }
 
             btnEight.Enabled = false;
@@ -199,15 +215,37 @@ namespace Tic_Tac_Toe
             {
                 btnNine.Text = "X";
                 screenDisplay.Text = "O turn";
+                gettingTheWinner();
             }
             else
             {
                 btnNine.Text = "O";
                 screenDisplay.Text = "X turn";
+                gettingTheWinner();
             }
 
             btnNine.Enabled = false;
             turn_count++;
         }
+
+        bool wins = false;
+        public void gettingTheWinner()
+        {
+            if(btnOne.Text.Equals(btnTwo.Text) && btnOne.Text.Equals(btnThree.Text))
+            {
+                winnerShow(btnOne, btnTwo, btnThree);
+                wins = true;
+            }
+        }
+
+        public void winnerShow(Button btnOne, Button btnTwo, Button btnThree)
+        {
+            btnOne.BackColor = Color.LightGreen;
+            btnTwo.BackColor = Color.LightGreen;
+            btnThree.BackColor = Color.LightGreen;
+
+            MessageBox.Show(btnOne.Text + " Wins!");
+        }
+
     }
 }
