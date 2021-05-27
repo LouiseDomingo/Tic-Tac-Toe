@@ -55,5 +55,40 @@ namespace Tic_Tac_Toe
             btnNine.FlatAppearance.BorderColor = Color.Black;
             btnNine.FlatAppearance.BorderSize = 1;
         }
+
+        int turn_count = 0;
+        private void btnOne_Click(object sender, EventArgs e)
+        {
+            if(turn_count % 2 == 0)
+            {
+                btnOne.Text = "X";
+                screenDisplay.Text = "O turn";
+            }
+            else
+            {
+                btnOne.Text = "O";
+                screenDisplay.Text = "X turn";
+            }
+
+            btnOne.Enabled = false;
+            turn_count++;
+        }
+
+        private void btnTwo_Click(object sender, EventArgs e)
+        {
+            if (turn_count % 2 == 0)
+            {
+                btnTwo.Text = "X";
+                screenDisplay.Text = "O turn";
+            }
+            else
+            {
+                btnTwo.Text = "O";
+                screenDisplay.Text = "X turn";
+            }
+
+            btnTwo.Enabled = false;
+            turn_count++;
+        }
     }
 }
