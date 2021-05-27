@@ -75,6 +75,7 @@ namespace Tic_Tac_Toe
             this.btnThree.TabIndex = 2;
             this.btnThree.Text = "3";
             this.btnThree.UseVisualStyleBackColor = false;
+            this.btnThree.Click += new System.EventHandler(this.btnThree_Click);
             // 
             // btnFour
             // 
@@ -86,6 +87,7 @@ namespace Tic_Tac_Toe
             this.btnFour.TabIndex = 3;
             this.btnFour.Text = "4";
             this.btnFour.UseVisualStyleBackColor = false;
+            this.btnFour.Click += new System.EventHandler(this.btnFour_Click);
             // 
             // btnFive
             // 
@@ -97,6 +99,7 @@ namespace Tic_Tac_Toe
             this.btnFive.TabIndex = 4;
             this.btnFive.Text = "5";
             this.btnFive.UseVisualStyleBackColor = false;
+            this.btnFive.Click += new System.EventHandler(this.btnFive_Click);
             // 
             // btnSix
             // 
@@ -108,6 +111,7 @@ namespace Tic_Tac_Toe
             this.btnSix.TabIndex = 5;
             this.btnSix.Text = "6";
             this.btnSix.UseVisualStyleBackColor = false;
+            this.btnSix.Click += new System.EventHandler(this.btnSix_Click);
             // 
             // btnSeven
             // 
@@ -119,6 +123,7 @@ namespace Tic_Tac_Toe
             this.btnSeven.TabIndex = 6;
             this.btnSeven.Text = "7";
             this.btnSeven.UseVisualStyleBackColor = false;
+            this.btnSeven.Click += new System.EventHandler(this.btnSeven_Click);
             // 
             // btnEight
             // 
@@ -130,6 +135,7 @@ namespace Tic_Tac_Toe
             this.btnEight.TabIndex = 7;
             this.btnEight.Text = "8";
             this.btnEight.UseVisualStyleBackColor = false;
+            this.btnEight.Click += new System.EventHandler(this.btnEight_Click);
             // 
             // btnNine
             // 
@@ -141,6 +147,7 @@ namespace Tic_Tac_Toe
             this.btnNine.TabIndex = 8;
             this.btnNine.Text = "9";
             this.btnNine.UseVisualStyleBackColor = false;
+            this.btnNine.Click += new System.EventHandler(this.btnNine_Click);
             // 
             // screenDisplay
             // 

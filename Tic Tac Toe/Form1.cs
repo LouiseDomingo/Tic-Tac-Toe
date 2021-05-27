@@ -90,5 +90,124 @@ namespace Tic_Tac_Toe
             btnTwo.Enabled = false;
             turn_count++;
         }
+
+        private void btnThree_Click(object sender, EventArgs e)
+        {
+            if (turn_count % 2 == 0)
+            {
+                btnThree.Text = "X";
+                screenDisplay.Text = "O turn";
+            }
+            else
+            {
+                btnThree.Text = "O";
+                screenDisplay.Text = "X turn";
+            }
+
+            btnThree.Enabled = false;
+            turn_count++;
+        }
+
+        private void btnFour_Click(object sender, EventArgs e)
+        {
+            if (turn_count % 2 == 0)
+            {
+                btnFour.Text = "X";
+                screenDisplay.Text = "O turn";
+            }
+            else
+            {
+                btnFour.Text = "O";
+                screenDisplay.Text = "X turn";
+            }
+
+            btnFour.Enabled = false;
+            turn_count++;
+        }
+
+        private void btnFive_Click(object sender, EventArgs e)
+        {
+            if (turn_count % 2 == 0)
+            {
+                btnFive.Text = "X";
+                screenDisplay.Text = "O turn";
+            }
+            else
+            {
+                btnFive.Text = "O";
+                screenDisplay.Text = "X turn";
+            }
+
+            btnFive.Enabled = false;
+            turn_count++;
+        }
+
+        private void btnSix_Click(object sender, EventArgs e)
+        {
+            if (turn_count % 2 == 0)
+            {
+                btnSix.Text = "X";
+                screenDisplay.Text = "O turn";
+            }
+            else
+            {
+                btnSix.Text = "O";
+                screenDisplay.Text = "X turn";
+            }
+
+            btnSix.Enabled = false;
+            turn_count++;
+        }
+
+        private void btnSeven_Click(object sender, EventArgs e)
+        {
+            if (turn_count % 2 == 0)
+            {
+                btnSeven.Text = "X";
+                screenDisplay.Text = "O turn";
+            }
+            else
+            {
+                btnSeven.Text = "O";
+                screenDisplay.Text = "X turn";
+            }
+
+            btnSeven.Enabled = false;
+            turn_count++;
+        }
+
+        private void btnEight_Click(object sender, EventArgs e)
+        {
+            if (turn_count % 2 == 0)
+            {
+                btnEight.Text = "X";
+                screenDisplay.Text = "O turn";
+            }
+            else
+            {
+                btnEight.Text = "O";
+                screenDisplay.Text = "X turn";
+            }
+
+            btnEight.Enabled = false;
+            turn_count++;
+        }
+
+        private void btnNine_Click(object sender, EventArgs e)
+        {
+            if (turn_count % 2 == 0)
+            {
+                btnNine.Text = "X";
+                screenDisplay.Text = "O turn";
+            }
+            else
+            {
+                btnNine.Text = "O";
+                screenDisplay.Text = "X turn";
+            }
+
+            btnNine.Enabled = false;
+            turn_count++;
+        }
     }
 }
