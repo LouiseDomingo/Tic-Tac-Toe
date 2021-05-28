@@ -298,6 +298,16 @@ namespace Tic_Tac_Toe
             btnThree.BackColor = Color.LightGreen;
 
             MessageBox.Show(btnOne.Text + " Wins!");
+
+            btnOne.Enabled = false;
+            btnTwo.Enabled = false;
+            btnThree.Enabled = false;
+            btnFour.Enabled = false;
+            btnFive.Enabled = false;
+            btnSix.Enabled = false;
+            btnSeven.Enabled = false;
+            btnEight.Enabled = false;
+            btnNine.Enabled = false;
         }
 
     }
