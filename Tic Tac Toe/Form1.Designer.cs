@@ -168,6 +168,7 @@ namespace Tic_Tac_Toe
             this.Controls.Add(this.btnThree);
             this.Controls.Add(this.btnTwo);
             this.Controls.Add(this.btnOne);
+            this.MaximizeBox = false;
             this.Name = "TicTacToe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";

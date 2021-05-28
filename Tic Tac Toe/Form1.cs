@@ -297,17 +297,63 @@ namespace Tic_Tac_Toe
             btnTwo.BackColor = Color.LightGreen;
             btnThree.BackColor = Color.LightGreen;
 
-            MessageBox.Show(btnOne.Text + " Wins!");
+            string winnerMessage = btnOne.Text + " Wins!\nPlay again?";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult winner = MessageBox.Show(winnerMessage, "", buttons);
+            if (winner == DialogResult.Yes)
+            {
+                turn_count = 1;
+                wins = false;
+                screenDisplay.Text = "Let's Play!";
 
-            btnOne.Enabled = false;
-            btnTwo.Enabled = false;
-            btnThree.Enabled = false;
-            btnFour.Enabled = false;
-            btnFive.Enabled = false;
-            btnSix.Enabled = false;
-            btnSeven.Enabled = false;
-            btnEight.Enabled = false;
-            btnNine.Enabled = false;
+                enablingButtons();
+
+                btnOne.Text = "";
+                btnOne.BackColor = Color.MistyRose;
+                //
+                btnTwo.Text = "";
+                btnTwo.BackColor = Color.MistyRose;
+                //
+                btnThree.Text = "";
+                btnThree.BackColor = Color.MistyRose;
+                //
+                btnFour.Text = "";
+                btnFour.BackColor = Color.MistyRose;
+                //
+                btnFive.Text = "";
+                btnFive.BackColor = Color.MistyRose;
+                //
+                btnSix.Text = "";
+                btnSix.BackColor = Color.MistyRose;
+                //
+                btnSeven.Text = "";
+                btnSeven.BackColor = Color.MistyRose;
+                //
+                btnEight.Text = "";
+                btnEight.BackColor = Color.MistyRose;
+                //
+                btnNine.Text = "";
+                btnNine.BackColor = Color.MistyRose;
+            }
+
+            else
+            {
+                Close();
+            }
+
+        }
+
+        private void enablingButtons()
+        {
+            btnOne.Enabled = true;
+            btnTwo.Enabled = true;
+            btnThree.Enabled = true;
+            btnFour.Enabled = true;
+            btnFive.Enabled = true;
+            btnSix.Enabled = true;
+            btnSeven.Enabled = true;
+            btnEight.Enabled = true;
+            btnNine.Enabled = true;
         }
 
     }
