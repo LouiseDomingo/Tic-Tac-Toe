@@ -231,10 +231,63 @@ namespace Tic_Tac_Toe
         bool wins = false;
         public void gettingTheWinner()
         {
-            if(btnOne.Text.Equals(btnTwo.Text) && btnOne.Text.Equals(btnThree.Text))
+            // horizontal
+            if(btnOne.Text != ("") && btnOne.Text.Equals(btnTwo.Text) && btnOne.Text.Equals(btnThree.Text))
             {
                 winnerShow(btnOne, btnTwo, btnThree);
                 wins = true;
+            }
+
+            if (btnFour.Text != ("") && btnFour.Text.Equals(btnFive.Text) && btnFour.Text.Equals(btnSix.Text))
+            {
+                winnerShow(btnFour, btnFive, btnSix);
+                wins = true;
+            }
+
+            if (btnSeven.Text != ("") && btnSeven.Text.Equals(btnEight.Text) && btnSeven.Text.Equals(btnNine.Text))
+            {
+                winnerShow(btnSeven, btnEight, btnNine);
+                wins = true;
+            }
+
+            // vertical
+            if (btnOne.Text != ("") && btnOne.Text.Equals(btnSix.Text) && btnOne.Text.Equals(btnSeven.Text))
+            {
+                winnerShow(btnOne, btnSix, btnSeven);
+                wins = true;
+            }
+
+            if (btnTwo.Text != ("") && btnTwo.Text.Equals(btnFive.Text) && btnTwo.Text.Equals(btnEight.Text))
+            {
+                winnerShow(btnTwo, btnFive, btnEight);
+                wins = true;
+            }
+
+            if (btnThree.Text != ("") && btnThree.Text.Equals(btnFour.Text) && btnThree.Text.Equals(btnNine.Text))
+            {
+                winnerShow(btnThree, btnFour, btnNine);
+                wins = true;
+            }
+
+            // diagonal
+            if (btnOne.Text != ("") && btnOne.Text.Equals(btnFive.Text) && btnOne.Text.Equals(btnNine.Text))
+            {
+                winnerShow(btnOne, btnFive, btnNine);
+                wins = true;
+            }
+
+            if (btnThree.Text != ("") && btnThree.Text.Equals(btnFive.Text) && btnThree.Text.Equals(btnSeven.Text))
+            {
+                winnerShow(btnThree, btnFive, btnSeven);
+                wins = true;
+            }
+
+            // tie
+            if (btnOne.Text != ("") && btnTwo.Text != ("") && btnThree.Text != ("") && btnFour.Text != ("") && btnFive.Text != ("")
+                && btnSix.Text != ("") && btnSeven.Text != ("") && btnEight.Text != ("") && btnNine.Text != (""))
+            {
+                MessageBox.Show("It's a draw!");
+                wins = false;
             }
         }
 
